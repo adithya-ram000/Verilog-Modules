@@ -1,6 +1,6 @@
 # Verilog Modules Collection
 
-This repository contains basic Verilog modules and corresponding testbenches for practicing digital design concepts.
+This Project contains basic Verilog modules and corresponding testbenches for practicing digital design concepts.
 
 ## Included Modules:
 - Logic Gates: AND, OR, NOT
@@ -9,8 +9,24 @@ This repository contains basic Verilog modules and corresponding testbenches for
 - 4-bit Synchronous Counter
 
 ## Usage:
-- Simulate testbenches using any Verilog simulator (e.g., ModelSim, Icarus Verilog).
-- Run simulations to verify module functionality.
+- Simulate the Verilog Modules and testbenches using any Verilog simulator such as:
+  - **Icarus Verilog**
+  - **ModelSim**
+  - **Vivado Simulator**
+- All source files are located in the 'src' folder.
+- All corresponding testbenches are located in the 'tb' folder.
+
+## Example Simulation (using Icarus Verilog):
+```
+cd tb
+iverilog -o tb_and_gate tb_and_gate.v ../src/and_gate.v
+vvp tb_and_gate
+```
+##Features:
+- Beginner-friendly Verilog module implementations.
+- Simple, well-structured code for easy understanding.
+- Testbenches provided for immediate simulation and verification.
+- Modular file organization for scalability.
 
 ## Author:
-DIY Verilog Project for academic learning.
+This project was developed for academic learning and Verilog practice purposes.
